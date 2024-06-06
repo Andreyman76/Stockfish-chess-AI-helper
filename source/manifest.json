@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Stockfish chess AI helper for lichess.org",
+	"short_name": "Chess helper",
+	"description": "Extension to help you play chess in lichess.org.",
+	"version": "1.0",
+	"author": "Andreyman76",
+	"permissions": ["activeTab", "tabs", "scripting"],
+	"host_permissions": [
+        "https://lichess.org/*"
+    ],
+	"content_scripts": [{
+        "js": ["js/script.js"],
+        "matches": ["https://lichess.org/*"]
+    }],
+	"icons": {
+		"16": "./icons/icon.png",
+		"32": "./icons/icon.png",
+		"48": "./icons/icon.png",
+		"128": "./icons/icon.png"
+	}
+}
